@@ -4,28 +4,286 @@
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="css/main.min.css" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+    crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
 
-    <!-- Bootstrap CSS -->
-    <!-- <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
-      crossorigin="anonymous"
-    /> -->
-
-    <title>Hello, world!</title>
+    <title>De ronde van Vlaanderen</title>
   </head>
-  <body>
-    <h1>Hello, world!</h1>
+  <body id="data-spy="scroll data-target="#navbar-example">
+    <nav
+      id="navbar-example"
+      class="navbar navbar-scrollspy sticky-top navbar-dark bg-dark"
+      style="padding-right: 17px; margin-right: -17px"
+      data-bs-padding-right=""
+      data-bs-margin-right=""
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#rvv">RVV <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bicycle" viewBox="0 0 16 16">
+  <path d="M4 4.5a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1v.5h4.14l.386-1.158A.5.5 0 0 1 11 4h1a.5.5 0 0 1 0 1h-.64l-.311.935.807 1.29a3 3 0 1 1-.848.53l-.508-.812-2.076 3.322A.5.5 0 0 1 8 10.5H5.959a3 3 0 1 1-1.815-3.274L5 5.856V5h-.5a.5.5 0 0 1-.5-.5zm1.5 2.443-.508.814c.5.444.85 1.054.967 1.743h1.139L5.5 6.943zM8 9.057 9.598 6.5H6.402L8 9.057zM4.937 9.5a1.997 1.997 0 0 0-.487-.877l-.548.877h1.035zM3.603 8.092A2 2 0 1 0 4.937 10.5H3a.5.5 0 0 1-.424-.765l1.027-1.643zm7.947.53a2 2 0 1 0 .848-.53l1.026 1.643a.5.5 0 1 1-.848.53L11.55 8.623z"/>
+</svg></a>
+         <li class="nav-item">
+      <a class="nav-link" href="#Klassement">Klassement</a>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link" href="#parcours">Het parcours</a>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link" href="#contact">contact</a>
+    </li>
+      </div>
+    </nav>
+    <h1 id="rvv" class="h1 text-md-center display-2">De ronde van vlaanderen</h1>
 
-    <!-- icon usage example -->
-    <i
+    <div class="container">
+      <p class="h5 lead">
+        De 105e editie van de Ronde van Vlaanderen wordt komende zondag 4 april
+        gereden. Hoeveel hellingen liggen er op het parcours? Wie verschijnt in
+        Antwerpen aan de start? En hoe kan ik de koers thuis op de
+        Sporza-kanalen volgen? Lees alles in deze handleiding.
+      </p>
+
+      <p class="h2">De favorieten van dit jaar</p>
+      <div class="card-group">
+        <div class="card">
+          <img
+            src="./img/wva.jpg"
+            class="card-img-top"
+            alt="card-group-image"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Wout van Aert</h5>
+            <p class="card-text">
+              This is a wider card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="./img/mvdp.jpg"
+            class="card-img-top"
+            alt="card-group-image"
+          />
+          <div class="card-body">
+            <h5 class="card-title">mathieu van der poel</h5>
+            <p class="card-text">
+              This card has supporting text below as a natural lead-in to
+              additional content.
+            </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="./img/juju.jpg"
+            class="card-img-top"
+            alt="card-group-image"
+          />
+          <div class="card-body">
+            <h5 class="card-title">julian alaphilippe</h5>
+            <p class="card-text">
+              This is a wider card with supporting text below as a natural
+              lead-in to additional content. This card has even longer content
+              than the first to show that equal height action.
+            </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+      <div class="dropdown text-end">
+        <button
+          class="btn btn-secondary dropdown-toggle"
+          type="button"
+          id="dropdownMenuDark"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Volledige deelnemerslijst
+        </button>
+        <ul
+          class="dropdown-menu dropdown-menu-dark"
+          aria-labelledby="dropdownMenuDark"
+        >
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+
+      <div class="row">
+        <div class="col-md-7">
+          <p class="h2">Zo was het vorig jaar</p>
+
+          <p>
+            Uw gevoel bedriegt zich geenszins, want voor de vorige editie van de
+            Ronde van Vlaanderen hoeven we niet zo ver achterom te kijken. Op 18
+            oktober zette Mathieu van der Poel zich na een nagelbijter op de
+            erelijst. De 104e editie kreeg het scenario waar op gehoopt werd.
+            Mathieu van der Poel, Wout van Aert en Julian Alaphilippe doken met
+            z'n drieën de finale in, maar de wereldkampioen viel vooraan
+            letterlijk en figuurlijk weg door een botsing met een motorrijder.
+            De ontknoping in Oudenaarde zou uiteindelijk nog lang nazinderen:
+            met het blote oog kon de winnaar van het spurtduel tussen Van der
+            Poel en Van Aert niet aangeduid worden, maar de fotofinish schonk de
+            prestigieuze overwinning aan de Nederlander. Lees hier nog eens het
+            verslag van vorig jaar: Mathieu van der Poel dwingt Wout van Aert op
+            de knieën in droomfinale
+          </p>
+        </div>
+
+        <div id="Klassement" class="col-md-5">
+          <p class="h2">Klassement</p>
+          <table class="table table-responsive table-striped">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Naam</th>
+                <th scope="col">Team</th>
+                <th scope="col">Resultaat</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mathieu van der Poel</td>
+                <td>AFC</td>
+                <td>5:43:17</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Wout van Aert</td>
+                <td>TJV</td>
+                <td>+0</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Alexander Kristoff</td>
+                <td>UAD</td>
+                <td>+8</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>Anthony Turgis</td>
+                <td>TDE</td>
+                <td>+8</td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>Yves Lampaert</td>
+                <td>DQT</td>
+                <td>+8</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-md-10">
+
+          <p id="parcours" class="h2">Het parcours</p>
+          
+          <p>
+            Sinds de verhuis naar Oudenaarde heeft het duo Oude Kwaremont-Paterberg
+            de sleutel in handen. De eerste scherprechter ligt 3 keer op het
+            parcours, de tweede kuitenbijter moet 2 keer bedwongen worden. Om 9.45 u
+            verlaat het peloton startplaats Antwerpen en na een geneutraliseerde
+            zone van 9,4 kilometer klinkt iets na 10 u in Burcht het officiële
+            startschot. Na een vlakke aanloop van ruim 80 kilometer zet het peloton
+            de tanden in de eerste kasseistroken. De Kattenberg is na 102 kilometer
+            de eerste helling van de dag. De trektocht snijdt vervolgens de Oude
+            Kwaremont (nog 133 km) aan en na passages over onder meer de Eikenberg,
+            Molenberg, Berendries en Kanarieberg zijn we terug bij de Oude Kwaremont
+            (nog 55 km). Na die tweede passage duikt de Paterberg (nog 51 km) voor
+            het eerst op. De finale wordt helemaal ontkurkt met de Koppenberg (nog
+            44 km) en na de Steenbeekdries, de Taaienberg en de Kruisberg/Hotond
+            komen we terug bij de cruciale tandem. De Oude Kwaremont (nog 17 km) en
+            de Paterberg (nog 13 km) sluiten de lijst van 19 hellingen af. Rond 16 u
+            kennen we na 254 kilometer de winnaar in de Minderbroederstraat in
+            Oudenaarde.
+          </p>
+
+        </div>
+          <div class="col-md-2 text-end">
+           <p class="h2">Volg ons op:</p>
+           <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+  <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+</svg></p>
+<p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+</svg></p>
+           
+          </div>
+
+      </div>
+<p>
+  <a id="contact" class="btn btn-secondary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+    Contacteer ons <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-square" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.5 2.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+</svg>
+  </a>
+
+
+</p>
+<div class="collapse show" id="collapseExample" style="">
+  <div class="card card-body">
+ <form>
+  <div class="row mb-3">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail3">
+    </div>
+  </div>
+  <div class="row mb-3">
+    <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="inputPassword3">
+    </div>
+    <label for="textarea" class="col-sm-2 col-form-label">Uw vraag</label>
+    <div class="col-sm-10">
+      <textarea class="form-control" id="textarea">
+    </div>
+  </div>
+ 
+  <div class="row mb-3">
+    <div class="col-sm-10 offset-sm-2">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck1">
+        <label class="form-check-label" for="gridCheck1">
+          Ik ga akkoord met de gebruiksvoorwaarden.
+        </label>
+      </div>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-secondary">Verzend</button>
+</form>
+  </div>
+</div>
+
+
+
+    </div>
+
+    <!-- <i
       class="bi-github"
       style="font-size: 5rem"
       role="img"
       aria-label="GitHub"
-    ></i>
+    ></i> -->
 
     <!-- Optional JavaScript; choose one of the two! -->
 
@@ -37,9 +295,16 @@
     ></script> -->
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
-    -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+      integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+      integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

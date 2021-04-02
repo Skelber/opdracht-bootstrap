@@ -14,7 +14,7 @@ function compile() {
   return src("src/scss/main.scss", { sourcemaps: true })
     .pipe(sass())
     .pipe(postcss([autoprefixer(), cssnano()]))
-    .pipe(rename("main.min.css"))
+    .pipe(rename("main.css"))
     .pipe(dest("dist/css", { sourcemaps: "." }));
 }
 

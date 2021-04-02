@@ -4,9 +4,28 @@
 
 @import "./node_modules/bootstrap/scss/bootstrap";
 
-//extra custom code plaats je onder het inladen, bv.:
 body {
-  background-color: hotpink;
+  position: relative;
 }
 
-// wil je Bootstrap niet volledig inladen maar slechts de Sass partials en JS bestanden die je nodig hebt, ziehier hoe je dat kan doen https://getbootstrap.com/docs/5.0/customize/optimize/
+.scrollspy-example {
+  position: relative;
+  height: 200px;
+  margin-top: .5rem;
+  overflow: auto;
+}
+
+.h1 {
+    margin: 50px;
+    color: #f1d802;
+}
+
+div {
+    margin: 40px 0px;
+}
+
+
+
+.lead {
+  margin: 50px;
+}
